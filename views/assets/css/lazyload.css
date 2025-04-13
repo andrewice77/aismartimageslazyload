@@ -1,0 +1,10 @@
+.lazy-img {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+.lazy-img[data-smartlazy="1"] {
+    filter: blur(5px);
+}
+.lazy-img:not([data-smartlazy]) {
+    filter: blur(0);
+}
